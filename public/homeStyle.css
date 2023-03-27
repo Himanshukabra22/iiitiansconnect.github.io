@@ -1,0 +1,82 @@
+.imj {
+    border-radius: 9px;
+    margin-top: 17px;
+    margin-right: 16px;
+}
+
+#logoImj1 {
+    height: 650px;
+    padding: 1rem 8rem;
+}
+
+#logoImj2 {
+    height: 650px;
+    opacity: 0.85;
+    padding: 1rem 8rem;
+
+}
+
+#logoImj3 {
+    height: 650px;
+    /* opacity: 0.85; */
+    padding: 1rem 8rem;
+
+}
+
+.taxi1 {
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+#nws1 {
+    height: 50rem;
+    border-radius: 2px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 3.5rem 5rem;
+}
+
+#nws2 {
+    /* height: 10rem;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 50rem; */
+    height: 50rem;
+    border-radius: 2px;
+    padding: 3.5rem 5rem;
+    margin: 2rem;
+
+    /* height: 600px;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px; */
+}
+
+#nws3 {
+    height: 45rem;
+    border-radius: 2px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 3.5rem 5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+/* .crslItem {
+    position: relative;
+    display: none;
+    float: left;
+    width: 90%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .4s ease-in-out;
+
+} */

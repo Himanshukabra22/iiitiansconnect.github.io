@@ -1,0 +1,110 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    <form action="/search" method="post">
+    <label for="name">Name</label><br>
+    <input type="text" name="firstname" id="">
+    <select class="form-select form-select-sm form-control" aria-label=".form-select-sm example" name="college">
+    <option selected>Select College</option>
+    <option value="Indian Institute of Information Technology, Surat">Indian Institute of Information Technology, Surat</option>
+    <option value="Indian Institute of Information Technology, Kota">Indian Institute of Information Technology, Kota</option>
+    <option value="Indian Institute of Information Technology, Pune">Indian Institute of Information Technology, Pune</option>
+    <option value="Indian Institute of Information Technology, Kancheepuram">Indian Institute of Information Technology, Kancheepuram</option>
+    <option value="Indian Institute of Information Technology, Jabalpur">Indian Institute of Information Technology, Jabalpur</option>
+    <option value="Indian Institute of Information Technology, Vadodara">Indian Institute of Information Technology, Vadodara</option>
+    <option value="Indian Institute of Information Technology, Delhi">Indian Institute of Information Technology, Delhi</option>
+    </select>
+    <label for="name">Batch</label><br>
+    <input type="number" name="batch" id="" min="1940" max="2030">
+    <input type="submit" value="Submit">
+    </form>
+    {{findData.[0].firstname}}
+</body>
+</html> --}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="tempStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sign_up.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{>header}}
+    <main>
+
+        <form action="/search" method="post">
+            <div class="container rounded bg-white mt-5 mb-5 px-2">
+                <div class="row ctr">
+                    <div class="col-md-5 border-right">
+                        <div class="p-3 py-4">
+                            <div class="col-md-12 mt-3"><label class="labels">Name</label><input type="text"
+                                class="form-control" placeholder="Enter Name" value="" name="firstname"></div>
+ 
+                            <div>
+                                <div class="col-md-6 mt-3"><label class="labels">Batch</label></div>
+                                    <input type="number" name="batch" id="" min="1940" max="2030" class="form-control" value="2020">
+                                </select>
+                            </div>
+        
+                            <div>
+                                <div class="col-md-6 mt-3"><label class="labels">College</label></div>
+                                <select class="form-select form-select-sm form-control" aria-label=".form-select-sm example" name="college">
+                                    <option selected>Select College</option>
+                                    <option value="Indian Institute of Information Technology, Surat">Indian Institute of Information Technology, Surat</option>
+                                    <option value="Indian Institute of Information Technology, Kota">Indian Institute of Information Technology, Kota</option>
+                                    <option value="Indian Institute of Information Technology, Pune">Indian Institute of Information Technology, Pune</option>
+                                    <option value="Indian Institute of Information Technology, Kancheepuram">Indian Institute of Information Technology, Kancheepuram</option>
+                                    <option value="Indian Institute of Information Technology, Jabalpur">Indian Institute of Information Technology, Jabalpur</option>
+                                    <option value="Indian Institute of Information Technology, Vadodara">Indian Institute of Information Technology, Vadodara</option>
+                                    <option value="Indian Institute of Information Technology, Delhi">Indian Institute of Information Technology, Delhi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-0 mb-2 text-center">
+                        <input type="submit" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </form>
+        <div class="row-12 mx-4">
+            <h3>Results</h3>
+        </div>
+        <div>
+            <ul>
+                <li><a href="http://localhost:3000/profile/{{findData.[0].email}}">{{findData.[0].firstname}}</a></li>
+                <li><a href="http://localhost:3000/profile/{{findData.[1].email}}">{{findData.[1].firstname}}</a></li>
+                <li><a href="http://localhost:3000/profile/{{findData.[2].email}}">{{findData.[2].firstname}}</a></li>
+                <li><a href="http://localhost:3000/profile/{{findData.[3].email}}">{{findData.[3].firstname}}</a></li>
+                <li><a href="http://localhost:3000/profile/{{findData.[4].email}}">{{findData.[4].firstname}}</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

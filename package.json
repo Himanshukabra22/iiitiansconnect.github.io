@@ -1,0 +1,36 @@
+{
+  "name": "devheat_devpurush",
+  "version": "1.0.0",
+  "description": "created for the purpose of devheat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js -e js hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himanshukabra22/Devheat_DevPurush.git"
+  },
+  "keywords": [
+    "DevPurush"
+  ],
+  "author": "Siddarth bhangle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Himanshukabra22/Devheat_DevPurush/issues"
+  },
+  "homepage": "https://github.com/Himanshukabra22/Devheat_DevPurush#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.2",
+    "multer": "^1.4.5-lts.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

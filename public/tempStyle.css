@@ -1,0 +1,14 @@
+.dkd {
+    padding: 40px;
+    margin-left: 15px;
+}
+
+.fm {
+    margin: 25px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
